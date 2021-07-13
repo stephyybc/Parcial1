@@ -19,8 +19,11 @@ Funciones 1 -  Crea una funcion llamada "mayusculas" que:
 */
 
 // CREA TU FUNCION MAYUSCULAS aqui:
-function mayusculas(nombre){
-    var mayusc = nombre.toUpperCase();
+function mayusculas(nombres){
+    var mayusc = [];
+    for(var i = 0; i < nombres.length; i++){
+        mayusc[i] = nombres[i].toUpperCase();
+}
     console.log(mayusc);    
 }
 
@@ -38,7 +41,7 @@ Funciones 2 -  Crea una funcion llamada "calculateDogAge" que:
 */
 
 // CREA TU FUNCION calculateDogAge aqui:
-calculateDogAg(age){
+function calculateDogAg(age){
     var ageofdog = age*7;
     console.log('La edad de tu mascota en años perros es de', ageofdog);
 } 
@@ -72,12 +75,12 @@ fahrenheitToCelsius(95) --> 35
 
 // CREA TUS FUNCIONES  aqui:
 
-celsiusToFahrenheit(temp){
+function celsiusToFahrenheit(temp){
     var tempToFar = temp*(1.8)+(32);
     console.log('La temperatura en Fahrenheit es de:',tempToFar);
 }
 
-fahrenheitToCelsius(temp){
+function fahrenheitToCelsius(temp){
     var tempToCel = (temp-32)/(1.8);
     console.log('La temperatura en Celsius es de:',tempToCel);
 }
