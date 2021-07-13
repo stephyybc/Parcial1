@@ -87,10 +87,12 @@ header,.content{
   @media (min-width:991px) {
   
     header {
-/*
-(3) Agrega codigo flex para que aparezcan los encabezados. (Solo necesitas activar flex)
+      display: flex,     
+      }
 
-*/      
+      ul.nav {
+        display: flex;
+        justify-content: space-evenly;
       }
 
       .nav {
